@@ -9,12 +9,17 @@ class ExampleApp(QtWidgets.QMainWindow, calculator.Ui_Dialog):
         self.setupUi(self)
         self.Add.clicked.connect(self.add)
         
+    def clear(self):
+        self.input_1.setText("")
+        self.input_2.setText("")
+        
+        
     def add(self):
-       num1 =  int(self.input_1.text())
-       num2 = int(self.input_2.text())
+       num1 =  float(self.input_1.text())
+       num2 = float(self.input_2.text())
        sum = num1 + num2
-       self.result.setText(str(sum))
-       
+       self.result.setText("%.2f" % sum)
+       self.clear()
     
 def main():
     app = QApplication(sys.argv)
