@@ -61,6 +61,9 @@
      <height>51</height>
     </rect>
    </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
    <property name="clearButtonEnabled">
     <bool>false</bool>
    </property>
@@ -113,8 +116,37 @@
      <height>20</height>
     </rect>
    </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
    <property name="text">
     <string>Result</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="mul">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>280</y>
+     <width>94</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Mul</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="div">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>280</y>
+     <width>94</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Div</string>
    </property>
   </widget>
  </widget>
