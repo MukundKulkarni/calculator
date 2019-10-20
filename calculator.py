@@ -28,6 +28,7 @@ class Ui_Dialog(object):
         self.result.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.result.setClearButtonEnabled(False)
         self.result.setObjectName("result")
+        self.result.setReadOnly(True)
         self.Sub = QtWidgets.QPushButton(Dialog)
         self.Sub.setGeometry(QtCore.QRect(290, 220, 94, 36))
         self.Sub.setObjectName("Sub")
